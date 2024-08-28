@@ -22,6 +22,7 @@
         .text-manrope{
             font-family: "Manrope", sans-serif;
         }
+
     </Style>
 
     <!-- Tailwind Customization -->
@@ -231,8 +232,37 @@
         </section>
 
         <!-- Form -->
-         <section class="my-2">
+         <section class="border-y-8 border-white bg-white bg-[url('assets/bg.jpg')] bg-no-repeat bg-center bg-cover py-10 lg:py-20 px-5 md:px-0">
+          <section class="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+            <!-- Form Content -->
+          <div class="pb-5 lg:w-3/4 mx-auto flex flex-col items-center text-center">
+            <button class="flex gap-3 bg-brand-light px-5 py-3 rounded-full mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              Let’s Connect
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold">Let’s Discuss Next Project</h2>
+            <p class="my-8">Let’s discuss our next project. I think it’s important to start by defining our goals and objectives. We should also outline the scope, set a timeline, and assign roles. What are your thoughts on this approach?</p>
+          </div>
 
+          <!-- Form -->
+            <form class=" lg:w-4/5 mx-auto grid md:grid-cols-2 gap-7">
+              <input type="text" placeholder="First Name*" class="px-5 py-4 rounded-full">
+              <input type="text" placeholder="Last Name*" class="px-5 py-4 rounded-full">
+              <input type="text" placeholder="Phone Number*" class="px-5 py-4 rounded-full">
+              <input type="text" placeholder="Email Number*" class="px-5 py-4 rounded-full">
+              <textarea name="comment" placeholder="Write your message here" class="px-5 py-4 rounded-2xl md:col-span-2 resize-none h-32"></textarea>
+              <div class="btn rounded-full px-3 bg-brand hover:border-brand border-0 hover:bg-white hover:border hover:border-brand md:col-span-2">
+                <a class="text-xl font-bold" href="#">View Details</a>
+                <div class="bg-stone-900 text-white rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>                           
+                </div>
+              </div>
+            </form>
+          </section>
          </section>
     </main>
     <footer></footer>
