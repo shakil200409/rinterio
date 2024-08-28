@@ -43,11 +43,11 @@
 
 </head>
 <body class="text-manrope">
-    <header class="container mx-auto">
+    <header class="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto pt-5">
       <!-- Navbar -->
-      <nav>
-        <div class="navbar flex justify-between">
-          <div>
+      <!-- <nav>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
             <div class="bg-brand p-1.5 rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -64,7 +64,7 @@
               <li><a class="text-gray-500 hover:text-black hover:font-extrabold hover:bg-white">Contact Us</a></li>
             </ul>
           </div>
-          <div>
+          <div class="flex items-center">
             <div class="hidden md:flex items-center">
               <div class="bg-white rounded-full shadow-md p-2 mr-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
       <!-- Banner -->
        <section class="mb-10 w-11/12 mx-auto">
@@ -113,8 +113,8 @@
 
         <!-- Banner Content -->
          <div class="text-center">
-          <h1 class="text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
-          <p class="leading-7 font-medium text-gray-500 my-7 w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
+          <p class="leading-7 font-medium text-gray-500 my-7 md:w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
           <div class="btn rounded-full px-3 bg-brand-light hover:bg-white hover:border-brand">
             <a class="text-xl font-bold" href="#">View Details</a>
             <div class="bg-brand rounded-full p-1">
@@ -129,10 +129,10 @@
     </header>
     <main class="relative bg-light-gray">
       <!-- About Us Section -->
-       <section class=" container mx-auto py-20 flex gap-10">
+       <section class="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto py-10 lg:py-20 lg:flex items-center gap-10 px-5 md:px-0">
         <!-- About content -->
-        <div class="w-1/2">
-          <img class="absolute left-10 top-5" src="assets/Vector.png" alt="">
+        <div class="lg:w-1/2 mb-5 flex flex-col items-center text-center lg:inline lg:text-left">
+          <img class="absolute left-10 top-5 hidden lg:inline" src="assets/Vector.png" alt="">
           <button class="flex gap-3 bg-white px-5 py-3 rounded-full mb-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -141,25 +141,25 @@
             
             About Us
           </button>
-          <h2 class="text-4xl font-bold">We design thoughtful, liveable spaces</h2>
-          <p class="my-8">Whether it’s a cozy home or a lucrative treehouse on Sydney’s Northern Beaches, Studio Wright brings thoughtful design to life!</p>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold">We design thoughtful, liveable spaces</h2>
+          <p class="my-8">Whether it’s a cozy home or a lucrative treehouse on Sydney’s Northern Beaches, Rinterio brings thoughtful design to life!</p>
 
           <!-- About Container -->
-        <div>
-          <div class="card card-side bg-white p-5 mb-5">
-            <figure>
-              <img src="assets/commercial.png" alt="">
+        <div class="md:flex items-center gap-5 lg:flex-col">
+          <div class="card card-side bg-white p-5 text-left mb-5 md:mb-0">
+            <figure class="w-1/2">
+              <img class="w-full" src="assets/commercial.png" alt="">
             </figure>
-            <div class="card-body">
+            <div class="card-body ml-5 p-0">
               <h2 class="card-title">Commercial</h2>
-              <p>As the largest global commercial real estate marketplace, LoopNet features diverse listings for investors at all levels.</p>
+              <p>As the largest global commercial real estate marketplace, Rinterio features diverse listings for investors at all levels.</p>
             </div>
           </div>
-          <div class="card card-side bg-white p-5">
-            <figure>
+          <div class="card card-side bg-white p-5 text-left">
+            <figure class="w-1/2">
               <img src="assets/residential.png" alt="">
             </figure>
-            <div class="card-body">
+            <div class="card-body ml-5 p-0">
               <h2 class="card-title">Residential</h2>
               <p>Finding the right residential property involves considering your lifestyle, budget, and preferences. Happy house hunting! </p>
             </div>
@@ -168,12 +168,72 @@
 
         </div>
 
-        
         <!-- About Image -->
-        <div class="w-1/2">
-          <img src="assets/Rectangle.png" alt="">
+        <div class="lg:w-1/2">
+          <img class="w-full" src="assets/Rectangle.png" alt="">
         </div>
        </section>
+
+       <!-- Works -->
+        <section class="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto pb-20 px-5 md:px-0">
+          <!-- Works Content -->
+          <div class="pb-5 md:w-3/4 mx-auto flex flex-col items-center text-center">
+            <button class="flex gap-3 bg-white px-5 py-3 rounded-full mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              How we works
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold">Our Works Process</h2>
+            <p class="my-8">Work with the demand and manage less costing on there findings by keeping commercial properties with green certifications and energy-efficient features.</p>
+          </div>
+
+          <!-- Works Container -->
+           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="card flex flex-col items-start bg-pink-200 p-7">
+              <figure class="mb-3">
+                <img src="assets/concept.png" alt="">
+              </figure>
+              <div class="card-body p-0">
+                <h2 class="card-title font-extrabold">Concept</h2>
+                <p>Visualize the concept of designs prefered by Client</p>
+              </div>
+            </div>
+            <div class="card flex flex-col items-start bg-yellow-200 p-7">
+              <figure class="mb-3">
+                <img src="assets/flow-chart.png" alt="">
+              </figure>
+              <div class="card-body p-0">
+                <h2 class="card-title font-extrabold">Design Process</h2>
+                <p>Generates ideas of various kind of design and environment</p>
+              </div>
+            </div>
+            <div class="card flex flex-col items-start bg-green-200 p-7">
+              <figure class="mb-3">
+                <img src="assets/vision.png" alt="">
+              </figure>
+              <div class="card-body p-0">
+                <h2 class="card-title font-extrabold">Supervision</h2>
+                <p>We ensures that everyone is aligned with the goals and standards.</p>
+              </div>
+            </div>
+            <div class="card flex flex-col items-start bg-blue-300 p-7">
+              <figure class="mb-3">
+                <img src="assets/concept.png" alt="">
+              </figure>
+              <div class="card-body p-0">
+                <h2 class="card-title font-extrabold">Budget Planning</h2>
+                <p>Our team is awarn about the budget, that's why they keep the cost low</p>
+              </div>
+            </div>
+            
+           </div>
+        </section>
+
+        <!-- Form -->
+         <section class="my-2">
+
+         </section>
     </main>
     <footer></footer>
 </body>
